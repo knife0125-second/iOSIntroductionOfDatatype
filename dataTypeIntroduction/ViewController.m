@@ -18,8 +18,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-//    NSLog(@"hogehoge");
-
     // 文字列型
     //$hogehoge = "hogehoge";
     NSString *hogehoge = @"hogehoge";
@@ -46,8 +44,6 @@
     NSDictionary *dic2 = @{@"first": @1, @"second":@2, @"third":@3};
     NSLog(@"%@", dic1);
     NSLog(@"%@", dic2);
-    [dic2 setValue:@10 forKey:@"first"];
-    NSLog(@"%@", dic2);
     
     // 変更できる辞書
     NSLog(@"=====================================");
@@ -61,21 +57,30 @@
     [mDic1 setObject:@"moge" forKey:@"second"];
     NSLog(@"%@", mDic1);
 
+    // NSNumberについても明日追加で紹介
+
     // ----------------------------------------------------------
 
-    // BOOL型(論理型のデータ)
-    
-    
+    // BOOLEAN型(論理型のデータ)
+    NSLog(@"=====================================");
+    BOOL trueTekinaYatsu = YES;
+    BOOL falseTekinaYatsu = NO;
+    NSLog(@"%hhd", trueTekinaYatsu);
+    NSLog(@"%hhd", falseTekinaYatsu);
+
     // 整数型(Integer)
-    
+    NSLog(@"=====================================");
+    NSInteger one = 1.1234;
+    NSLog(@"%d", one);
     
     // 少数型(Float型)
-    
-    
-    // nil型
-    
-    
+    NSLog(@"=====================================");
+    CGFloat floatVal = 1.2345;
+    NSLog(@"%f", floatVal);
 
+    // nil型
+    // NilとNull(NSNull)との使い分けについてはケースに応じてやっていきます。
+    NSLog(@"=====================================");
 }
 
 - (void)didReceiveMemoryWarning {
