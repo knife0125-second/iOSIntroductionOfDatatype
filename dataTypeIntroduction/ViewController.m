@@ -63,8 +63,8 @@
 
     // BOOLEAN型(論理型のデータ)
     NSLog(@"=====================================");
-    BOOL trueTekinaYatsu = YES;
-    BOOL falseTekinaYatsu = NO;
+    Boolean trueTekinaYatsu = YES;
+    Boolean falseTekinaYatsu = NO;
     NSLog(@"%hhd", trueTekinaYatsu);
     NSLog(@"%hhd", falseTekinaYatsu);
 
@@ -81,11 +81,101 @@
     // nil型
     // NilとNull(NSNull)との使い分けについてはケースに応じてやっていきます。
     NSLog(@"=====================================");
+
+    
+    // if文の紹介
+    NSLog(@"=====================================");
+    NSString *str = @"hogehoge";
+    NSString *str2 = @"hogehoge";
+    if ([str isEqual:str2]) {
+        NSLog(@"一緒かな？");
+    } else {
+        NSLog(@"一緒じゃないかな？");
+    }
+
+    NSInteger a = 1;
+    NSInteger b = 2;
+    if (a == b) {
+        NSLog(@"一緒だよ");
+    } else {
+        NSLog(@"違うよ");
+    }
+    
+    
+    // Switch文
+    NSLog(@"=====================================");
+    switch (a) {
+        case 1:
+        {
+            NSLog(@"aが1の場合");
+            // caseの中で変数宣言する場合には、{}でcase内を囲みます
+            NSString *hoge = @"fuga";
+            NSLog(@"%@", hoge);
+            break;
+        }
+        case 2:
+        {
+            NSLog(@"aが1の場合");
+            break;
+        }
+        default:
+            break;
+    }
+    
+    
+    // for文
+    NSLog(@"=====================================");
+    for (NSInteger i = 0; i < 5; i++) {
+        NSLog(@"%d", i);
+    }
+
+    // forin文
+    NSLog(@"=====================================");
+    NSArray *bar = @[@"hoge", @"fuga", @"moge"];
+    for (NSString *foo in bar) {
+        NSLog(@"%@", foo);
+    }
+
+    // forin文で辞書を繰り返し処理するやり方は自分で調べてみてね！
+    NSLog(@"=====================================");
+
+
+    
+    
+//    
+//    NSString *a = [NSString stringWithString:@"AAA"];
+//    NSString *b = [NSString stringWithFormat:@"%@", @"AAA"];
+//    NSLog(@"%@", a);
+//    NSLog(@"%@", b);
+//    
+//    if (a == b) {
+//        NSLog(@"イコールだよ");
+//    } else {
+//        NSLog(@"イコールじゃないよ");
+//    }
+//    
+
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+
 }
 
 @end

@@ -416,6 +416,7 @@
 				410DBF591A2D55AA00076E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		410DBF5A1A2D55AA00076E90 /* Build configuration list for PBXNativeTarget "dataTypeIntroductionTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				410DBF5C1A2D55AA00076E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
